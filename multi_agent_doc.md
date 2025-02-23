@@ -1,5 +1,9 @@
 # Multi-Agent Chatbot Documentation
 
+@Contributors:
+- Huapeng Zhou: Implement the multi-agent system structure and the diagram Implement the Router_Agent and Query_Agent
+- Junfeng Zhang: Implement the Obnoxious_Agent, Relevant_Documents_Agent, and Answering_Agent, refine and recview the code and report
+
 ## Overview
 The Multi-Agent Chatbot is a sophisticated system designed to handle machine learning-related queries through a coordinated network of specialized agents. The system uses OpenAI's GPT-4 model and Pinecone vector database for document retrieval and question answering.
 
@@ -56,3 +60,6 @@ The system uses Streamlit for the web interface, providing:
 ## Test Results
 ![Test Results](./result1.png)
 ![Test Results 2](./result2.png)
+
+## Diagram
+![Diagram](./diagram.png)
