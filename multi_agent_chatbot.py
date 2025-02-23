@@ -259,9 +259,10 @@ class Head_Agent:
                 return "Hello! I'm an AI assistant specialized in machine learning topics. How can I help you today?"
                 
             # Handle both follow-up and standalone questions
-            relevant_docs = ""
+            relevant_docs = self.query_agent.query_vector_store(query, k=5)
             if query_type != PromptType.FOLLOW_UP:
-                relevant_docs = self.query_agent.query_vector_store(query, k=5)
+                if not self.relevant_docs_agent.is_relevant(query, relevant_docs):
+                    return "No relevant documents found. Please try asking a different question."
                 
             response = self.answering_agent.generate_response(
                 query=query,
