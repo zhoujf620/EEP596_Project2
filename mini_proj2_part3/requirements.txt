@@ -1,0 +1,8 @@
+openai
+pinecone-client
+streamlit
+langchain
+langchain-community
+langchain-pinecone
+pymupdf
+numpy 
